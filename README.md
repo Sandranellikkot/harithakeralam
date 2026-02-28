@@ -54,21 +54,26 @@ npm install
 #### Run
 ```bash
 npm start
-
+```
 ## Project Documentation
 
 ### For Software:
 
 #### Screenshots (Add at least 3)
 
-![Screenshot1](Add screenshot 1 here with proper name)
-*Add caption explaining what this shows*
+<img src="./adminpage1.png">
+*This shows the admin page section*
 
-![Screenshot2](Add screenshot 2 here with proper name)
-*Add caption explaining what this shows*
+<img src="adminpage2.png">
+*This shows the admin page 2nd section*
 
-![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
+<img src="homepage.png">
+*This shows the home page*
+
+<img src="loginpage.png">
+this shows the login page
+
+<img src="">
 
 #### Diagrams
 
