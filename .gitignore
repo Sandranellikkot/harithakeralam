@@ -1,0 +1,28 @@
+# IDE / Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS related
+.DS_Store
+Thumbs.db
+
+# Dependencies (if added later)
+node_modules/
+dist/
+build/
+
+# Local Environment / Secrets (For future API use)
+.env
+.env.local
+.env.*.local
+
+# Gemini / AI artifacts
+.gemini/
+.agents/
+.agent/
+_agents/
+_agent/
+brain/
+tmp/
