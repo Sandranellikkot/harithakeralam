@@ -73,14 +73,14 @@ npm start
 <img src="loginpage.png">
 this shows the login page
 
-<img src="">
+<img src="userdashboard.png">
+this shows the user dashboard
 
 #### Diagrams
 
 **System Architecture:**
 
-![Architecture Diagram](docs/architecture.png)
-*Explain your system architecture - components, data flow, tech stack interaction*
+<img src="">
 
 **Application Workflow:**
 
