@@ -1,0 +1,57 @@
+{
+  "users": [
+    {
+      "id": "u1",
+      "name": "Rohit",
+      "points_balance": 150,
+      "waste_history": [
+        {
+          "date": "2026-02-15",
+          "weight_kg": 2.5,
+          "grade": "A"
+        },
+        {
+          "date": "2026-02-22",
+          "weight_kg": 1.0,
+          "grade": "B"
+        }
+      ]
+    },
+    {
+      "id": "u2",
+      "name": "Priya",
+      "points_balance": 320,
+      "waste_history": [
+        {
+          "date": "2026-02-10",
+          "weight_kg": 5.0,
+          "grade": "A"
+        },
+        {
+          "date": "2026-02-24",
+          "weight_kg": 3.2,
+          "grade": "A"
+        }
+      ]
+    },
+    {
+      "id": "u3",
+      "name": "Anjali",
+      "points_balance": 45,
+      "waste_history": [
+        {
+          "date": "2026-02-20",
+          "weight_kg": 4.5,
+          "grade": "C"
+        }
+      ]
+    },
+    {
+      "id": "a1",
+      "name": "Haritha Kerala Supervisor",
+      "role": "admin",
+      "username": "admin1",
+      "password": "password"
+    }
+  ]
+}

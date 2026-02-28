@@ -1,0 +1,194 @@
+/* 
+   ux4g-core.css
+   Core design tokens and resets based on UX4G (Government of India Design System) principles.
+*/
+
+:root {
+  /* UX4G Color Palette Guidelines */
+  --primary-color: #0F4C81; /* Classic Blue - Trust, Authority */
+  --primary-light: #3B72A4;
+  --primary-dark: #0A3254;
+  
+  --secondary-color: #F4A261; /* Vibrant Orange for Accent/Call to actions */
+  --secondary-light: #F8C39B;
+  
+  --success-color: #2A9D8F; /* Green - Eco friendly, Success */
+  --success-light: #E9F5F3;
+  
+  --warning-color: #E9C46A; /* Yellow - Alerts */
+  --warning-light: #FDF9EC;
+  
+  --error-color: #E76F51; /* Red - Fines, Critical Issues */
+  --error-light: #FCECE9;
+  
+  /* Neutral Colors */
+  --text-primary: #1D1D1D;
+  --text-secondary: #5E5E5E;
+  --text-tertiary: #8B8B8B;
+  --bg-color: #F9FAFB;
+  --surface-color: #FFFFFF;
+  --border-color: #E2E8F0;
+  
+  /* Typography - UX4G Focuses on clean, readable sans-serif */
+  --font-family-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-family-display: 'Outfit', 'Inter', sans-serif;
+  
+  /* Spacing */
+  --spacing-1: 0.25rem;
+  --spacing-2: 0.5rem;
+  --spacing-3: 0.75rem;
+  --spacing-4: 1rem;
+  --spacing-5: 1.5rem;
+  --spacing-6: 2rem;
+  --spacing-8: 3rem;
+  --spacing-10: 4rem;
+  
+  /* Borders and Shadows (Subtle, professional) */
+  --border-radius-sm: 4px;
+  --border-radius: 8px;
+  --border-radius-lg: 12px;
+  
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Base Reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family-sans);
+  color: var(--text-primary);
+  background-color: var(--bg-color);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Typography Headers */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family-display);
+  color: var(--text-primary);
+  line-height: 1.2;
+  margin-bottom: var(--spacing-3);
+  font-weight: 700;
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.5rem; }
+h4 { font-size: 1.25rem; }
+
+p {
+  margin-bottom: var(--spacing-4);
+  color: var(--text-secondary);
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: var(--primary-dark);
+}
+
+/* Layout Core */
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-4);
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  flex: 1;
+}
+
+/* Utility Classes */
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+.text-primary { color: var(--primary-color); }
+.text-success { color: var(--success-color); }
+.text-error { color: var(--error-color); }
+
+.mt-2 { margin-top: var(--spacing-2); }
+.mt-4 { margin-top: var(--spacing-4); }
+.mt-6 { margin-top: var(--spacing-6); }
+.mb-2 { margin-bottom: var(--spacing-2); }
+.mb-4 { margin-bottom: var(--spacing-4); }
+.mb-6 { margin-bottom: var(--spacing-6); }
+
+/* Government Banner Specifics */
+.gov-banner {
+  background-color: var(--surface-color);
+  border-bottom: 1px solid var(--border-color);
+  padding: var(--spacing-2) 0;
+  font-size: 0.875rem;
+}
+
+.gov-text {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-2);
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.gov-emblem {
+  height: 20px;
+  width: auto;
+}
+
+.accessibility-tools {
+  display: flex;
+  gap: var(--spacing-4);
+  align-items: center;
+}
+
+.skip-link {
+  background: transparent;
+  border: none;
+  color: var(--primary-color);
+  font-size: 0.875rem;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.text-size-controls {
+  display: flex;
+  gap: var(--spacing-2);
+}
+
+.text-size-controls button {
+  background: var(--bg-color);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-sm);
+  padding: 2px 6px;
+  cursor: pointer;
+  font-size: 0.875rem;
+}
+
+.text-size-controls button:hover {
+  background: var(--border-color);
+}
