@@ -9,7 +9,7 @@
 ### Team Name: Aurora
 
 ### Team Members
-- Member 1: Sandra N - College of Engineering Thalassery
+- Sandra N - College of Engineering Thalassery
 
 ### Hosted Project Link
 harithakeralam.vercel.app
