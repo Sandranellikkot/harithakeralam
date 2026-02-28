@@ -1,0 +1,22 @@
+{
+    "name": "haritha-keralam",
+    "version": "1.0.0",
+    "description": "A functional Waste Management and Rewards Portal inspired by the HarithaKeralam initiative. Features citizen dashboards, admin portals, and a Sacha Points reward system.",
+    "main": "index.html",
+    "scripts": {
+        "start": "npx serve .",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "waste-management",
+        "rewards",
+        "kerala",
+        "sachakeralam",
+        "haritha-karma-sena"
+    ],
+    "author": "Citizen Contributor",
+    "license": "MIT",
+    "devDependencies": {
+        "serve": "^14.2.1"
+    }
+}
